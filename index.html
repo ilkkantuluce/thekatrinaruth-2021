@@ -14,6 +14,34 @@
 
     <header>
         <img src="./assets/images/hero.png" class="img-fluid" alt="">
+
+        <img src="./assets/images/bars.png" class="bars toggle-navbar" alt="">
+
+        <div class="navbar">
+            <img src="./assets/images/close.png" class="close toggle-navbar" alt="">
+            <div class="vertical-links">
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">READ</a>
+                <a href="">WATCH</a>
+                <a href="">LISTEN</a>
+                <a href="">BOOKS</a>
+                <a href="">DIGITAL COURSES</a>
+                <a href="">WORK WITH KAT</a>
+                <a href="">CONTACT</a>
+            </div>
+            <div class="horizontal-links">
+                <a href="">ARCHIVES</a>
+                <a href="">OH SHIT - FREE GOODIES</a>
+                <a href="">AFFILIATES</a>
+            </div>
+        </div>
+
+        <div class="socials">
+            <a href=""><img src="./assets/images/twitter.png" alt=""></a>
+            <a href=""><img src="./assets/images/instagram.png" alt=""></a>
+            <a href=""><img src="./assets/images/facebook.png" alt=""></a>
+        </div>
     </header>
     
     <section class="featured">
@@ -307,6 +335,10 @@
             speed: 300,
             slidesToShow: 1,
             slidesToScroll: 1,
+        });
+
+        $('.toggle-navbar').on('click', function(e) {
+            $('.navbar').toggleClass("active");
         });
     </script>
     

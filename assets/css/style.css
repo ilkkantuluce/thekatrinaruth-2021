@@ -45,6 +45,96 @@ section {
     margin-top: 100px
 }
 
+header {
+    position: relative;
+}
+
+header .bars {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+header .socials {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    margin-bottom: 5%;
+    display: flex;
+}
+
+header .socials a {
+    margin: 0px 40px;
+}
+
+.navbar .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.navbar {
+    position: absolute;
+    top: -100vh;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    background-color: black;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.navbar.active {
+    top: 0px;
+}
+
+.navbar .vertical-links {
+    margin-top: 5vh;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .vertical-links a {
+    display: block;
+    width: fit-content;
+    font-size: 30px;
+    margin: auto;
+}
+
+.navbar .vertical-links a:after {
+    content: ' ';
+    display: block;
+    border: 2px solid #FF66C4;
+    width: 65px;
+    margin: auto;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+.navbar .vertical-links a:last-child::after  {
+    content: "";
+    border: none;
+}
+
+.navbar .horizontal-links {
+    margin-top: 5vh;
+}
+
+.navbar .horizontal-links a {
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
 .crooked {
     width: 100%;
     height: 60px;
