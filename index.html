@@ -4,7 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.min.css" />
 
     <title>KATRINARUTHSHOW.COM</title>
 </head>
@@ -46,7 +48,7 @@
         <img src="./assets/images/asskickery.png" class="img-fluid" alt="">
     </section>
 
-    <section>
+    <section class="free-training">
         <div class="container">
             <h3>KATRINARUTHSHOW.COM</h3>
             <h1>FREE TRAINING</h1>
@@ -66,6 +68,7 @@
             </div>
         </div>
         <img src="./assets/images/brush-swash.png" class="brush-swash" alt="">
+        <div class="crooked-2"></div>
     </section>
 
     <section>
@@ -131,6 +134,53 @@
         </div>
         <img src="./assets/images/pink-swash-1.png" class="pink-swash-1" alt="">
         <img src="./assets/images/pink-swash-2.png" class="pink-swash-2" alt="">
+    </section>
+
+
+    <section class="testimonials">
+        <div class="container">
+            <h3>KATRINARUTHSHOW.COM</h3>
+            <h1>TESTIMONIALS</h1>
+
+            <div class="testimonials-inner">
+                <div class="slider">
+                    <div class="single-item">
+
+                        <div class="person-info">
+                            <img src="./assets/images/headshot.png" alt="">
+                            <div>
+                                <h2>John Doe</h2>
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum leo mi a scelerisque nulla lacinia nec. Donec vel ligula lorem. In ultricies facilisis eros id euismod”.</p>
+                            </div>
+                        </div>
+
+                        <div class="person-info">
+                            <img src="./assets/images/headshot.png" alt="">
+                            <div>
+                                <h2>John Doe</h2>
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum leo mi a scelerisque nulla lacinia nec. Donec vel ligula lorem. In ultricies facilisis eros id euismod”.</p>
+                            </div>
+                        </div>
+
+                        <div class="person-info">
+                            <img src="./assets/images/headshot.png" alt="">
+                            <div>
+                                <h2>John Doe</h2>
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum leo mi a scelerisque nulla lacinia nec. Donec vel ligula lorem. In ultricies facilisis eros id euismod”.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href=""><img src="./assets/images/twitter.png" alt=""></a>
+                    <a href=""><img src="./assets/images/instagram.png" alt=""></a>
+                    <a href=""><img src="./assets/images/facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="crooked"></div>
+        <div class="crooked-2"></div>
     </section>
 
 
@@ -207,15 +257,16 @@
         <div class="container">
             <h3>KATRINARUTHSHOW.COM</h3>
             <h1>SIGN UP NOW</h1>
-
-            <form action="">
-                <input type="text" placeholder="FIRST NAME" required name="" id="">
-                <input type="text" placeholder="LAST NAME" required name="" id="">
-                <input type="email" placeholder="EMAIL ADDRESS" required name="" id="">
-                <button type="submit">SUBMIT</button>
-            </form>
-
-        </div>
+    
+                <form action="">
+                    <input type="text" placeholder="FIRST NAME" required name="" id="">
+                    <input type="text" placeholder="LAST NAME" required name="" id="">
+                    <input type="email" placeholder="EMAIL ADDRESS" required name="" id="">
+                    <button type="submit">SUBMIT</button>
+                </form>
+    
+            </div>
+        <div class="crooked"></div>
     </section>
 
 
@@ -241,11 +292,23 @@
                 <li><a href="">AFFILIATES</a></li>
             </ul>
         </div>
-        
 
         <h2>FOLLOW THE SOCIALS</h2>
     </footer>
 
 
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+
+    <script>
+        $('.single-item').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    </script>
+    
 </body>
 </html>
